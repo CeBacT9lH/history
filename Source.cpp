@@ -6,27 +6,29 @@ int main() {
 	double x, y;
 	char a;
 
+	cout << "напишите два числа и знак операции:";
 	cin >> x >> y >> a;
 
 	switch (a)
 	{
 	case '+':
-			cout << x + y;
+			cout << "Сумма:" << x + y;
 		break;
 
 	case '-':
-			cout << x - y;
+			cout << "Разность:" << x - y;
 		break;
 
 	case '*':
-			cout << x * y;
+			cout << "Произведение:" << x * y;
 		break;
 
 	case '/':
-			cout << x / y;
+			cout << "Частное:" << x / y;
 		break;
 	default:
-		cout << "����� �������� ���!";
+		cout << "Такой операции нет!";
 		break;
 	}
+	return 0;
 }
